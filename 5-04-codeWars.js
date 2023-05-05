@@ -67,3 +67,6 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
         return Math.abs((sonYearsOld - dadAgeAtSonBirth))
   }
   console.log(twiceAsOld(49, 25))
+  console.log(twiceAsOld(40, 16))
+  console.log(twiceAsOld(25, 1))
+  console.log(twiceAsOld(63, 39))
