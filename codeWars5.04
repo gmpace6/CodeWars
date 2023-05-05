@@ -1,0 +1,33 @@
+Practice
+Complete challenging Kata to earn honor and ranks. Re-train to hone technique
+Freestyle Sparring
+Take turns remixing and refactoring others code through Kumite
+CAREER
+Opportunities
+Find your next career challenge – powered by Qualified Jobs
+COMMUNITY
+Leaderboards
+Achieve honor and move up the global leaderboards
+Chat
+Join our Discord server and chat with your fellow code warriors
+Discussions
+View our Github Discussions board to discuss general Codewars topics
+ABOUT
+Docs
+Learn about all of the different aspects of Codewars
+gmpace6 Avatar
+8 kyu
+3
+8 kyu
+Find Multiples of a Number
+
+Instructions
+
+In this simple exercise, you will build a program that takes a value, integer , and returns a list of its multiples up to another value, limit . If limit is a multiple of integer, it should be included as well. There will only ever be positive integers passed into the function, not consisting of 0. The limit will always be higher than the base.
+
+For example, if the parameters passed are (2, 6), the function should return [2, 4, 6] as 2, 4, and 6 are the multiples of 2 up to 6.
+
+
+function findMultiples(integer, limit) {
+  //your code here
+}
