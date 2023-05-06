@@ -38,3 +38,34 @@ let c = 5
     return Math.max(ans1, ans2, ans3, ans4, ans5, ans6)
   }
   console.log(expressionMatter(a, b, c))
+
+//   Wilson primes satisfy the following condition. Let P represent a prime number.
+//   Then,
+//   ((P-1)! + 1) / (P * P)
+//   should give a whole number.
+//   Your task is to create a function that returns true if the given number is a Wilson prime.
+
+// function factorialize(num) {
+//     if (num < 0) 
+//           return -1;
+//     else if (num === 0 || num === 1) 
+//         return 1;
+//     else {
+//         return (num * factorialize(num - 1));
+//     }
+//   }
+
+// function amIWilson(p) {
+//     let pFact = factorialize(p-1)
+//     return Number.isInteger((pFact + 1) / (p * p)) 
+//   }
+//   console.log(amIWilson(563))
+
+// Make a function that will return a greeting statement that uses an input; your program should return,
+// Hello, <name> how are you doing today?".
+// [Make sure you type the exact thing I wrote or the program may not execute properly]
+
+function greet(name){
+    return `Hello, ${name} how are you doing today?`
+  }
+  console.log(greet('Garrett'))
