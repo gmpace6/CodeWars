@@ -98,3 +98,69 @@ const sequenceSum = (begin, end, step) => {
   console.log(reverseNumber1(45, 30))
   console.log(reverseNumber1(3, 4))
   console.log(reverseNumber1(5, 1))
+
+
+
+//   Your classmates asked you to copy some paperwork for them. You know that there are 'n' classmates and the paperwork has 'm' pages.
+//   Your task is to calculate how many blank pages do you need. If n < 0 or m < 0 return 0.
+  
+//   Example:
+//   n= 5, m=5: 25
+//   n=-5, m=5:  0
+
+function paperwork(n, m) {
+    if(n <= 0 || m <= 0) {
+        return 0
+    } else {
+        return n * m
+    }
+}
+
+console.log(paperwork(5, 5))
+console.log(paperwork(-5, 5))
+
+
+// Write a function that returns a string in which firstname is swapped with last name.
+
+// Example(Input --> Output)
+
+// "john McClane" --> "McClane john"
+
+
+function nameShuffler(str){
+    return str.split(' ').reverse().join(' ')
+  }
+  console.log(nameShuffler("john McClane"))
+
+
+
+//   Categorize New Member
+
+//   DESCRIPTION:
+// The Western Suburbs Croquet Club has two categories of membership, Senior and Open. They would like your help with an application form that will tell prospective members which category they will be placed.
+
+// To be a senior, a member must be at least 55 years old and have a handicap greater than 7. In this croquet club, handicaps range from -2 to +26; the better the player the lower the handicap.
+
+// Input
+// Input will consist of a list of pairs. Each pair contains information for a single potential member. Information consists of an integer for the person's age and an integer for the person's handicap.
+
+// Output
+// Output will consist of a list of string values (in Haskell and C: Open or Senior) stating whether the respective member is to be placed in the senior or open category.
+
+// Example
+// input =  [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
+// output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]
+
+function openOrSenior(data){
+    let output = []
+    for(let i = 0; i < data.length; i++) {
+        let [age, handicap] = data[i]
+        if(age >= 55 && handicap > 7) {
+            output.push("Senior")
+        } else {
+            output.push("Open")
+        }
+    }
+    return output
+  }
+  console.log(openOrSenior([[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]))
